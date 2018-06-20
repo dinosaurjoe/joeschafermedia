@@ -1,5 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+@import "bootstrap-overrides";
+
 @import "components/avatar";
 @import "components/banner";
 @import "components/buttons";
