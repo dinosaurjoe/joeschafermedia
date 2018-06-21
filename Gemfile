@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 
 gem 'bootstrap-sass'
+gem 'font-awesome-sass', '~> 5.0.13'
+
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
