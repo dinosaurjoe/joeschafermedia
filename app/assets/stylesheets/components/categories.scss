@@ -1,0 +1,20 @@
+.category-container {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  li {
+    display: inline;
+    a {
+      float: left;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $dark-blue;
+    }
+    a:hover {
+      color: $purple;
+    }
+  }
+}

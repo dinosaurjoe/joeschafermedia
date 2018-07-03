@@ -1,5 +1,9 @@
-<% Category.all.each do |category| %>
-  <li>
-  <%= link_to category.name, posts_path(category: category.name) %>
-  </li>
-<% end %>
+<div class="category-container">
+  <ul>
+    <% Category.all.each do |category| %>
+      <li class="col-xs-2">
+      <%= link_to category.name, posts_path(category: category.name) %>
+      </li>
+    <% end %>
+  </ul>
+</div>
