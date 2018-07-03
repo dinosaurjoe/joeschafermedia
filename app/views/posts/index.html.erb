@@ -1,4 +1,16 @@
-<% @posts.each do |post| %>
-     <h1><%= link_to post.title, post %></h1>
-     <p><%= post.content %></p>
-<% end %>
+
+<div class="container">
+  <div class="row">
+    <% @posts.each do |post| %>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://lviv.com/wp-content/uploads/2017/01/jjjjj.jpg');">
+          <div class="card-category"><%= Category.find(post.category_id).name%></div>
+          <div class="card-description">
+            <h1><%= link_to post.title, post %></h1>
+            <p><%= post.content %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
