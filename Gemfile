@@ -32,6 +32,11 @@ gem 'bootstrap-sass'
 gem 'font-awesome-sass', '~> 5.0.13'
 
 
+#react
+gem 'webpacker'
+gem 'react-rails'
+
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
