@@ -3,12 +3,10 @@
   <div class="row">
     <% @posts.each do |post| %>
       <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://lviv.com/wp-content/uploads/2017/01/jjjjj.jpg');">
-          <div class="card-category"><%= Category.find(post.category_id).name%></div>
               <%= react_component("Post", {title: post.title,
-                                          path: post_path(post)}
+                                          path: post_path(post),
+                                          category: Category.find(post.category_id).name}
                                   ) %>            
-        </div>
       </div>
     <% end %>
   </div>
