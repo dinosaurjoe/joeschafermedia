@@ -1,9 +1,9 @@
 <div class="category-container">
   <ul>
     <% Category.all.each do |category| %>
-      <li class="col-xs-2">
-      <%= link_to category.name, posts_path(category: category.name) %>
-      </li>
+      <%= react_component("CategoryNav", {name: category.name,
+                                          path: posts_path(category: category.name)}
+                          ) %>
     <% end %>
   </ul>
 </div>
